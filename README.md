@@ -45,7 +45,7 @@ https://youtu.be/UkVe2rLXZ-U<br>
   </tr>
   <tr>
     <th>최성원</th>
-    <th>영상인식 제작</th>
+    <th>영상인식 장치 제작</th>
     <th></th>
   </tr>
   <tr>
