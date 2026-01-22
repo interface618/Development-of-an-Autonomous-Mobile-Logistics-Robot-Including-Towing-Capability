@@ -43,7 +43,7 @@ https://youtu.be/UkVe2rLXZ-U<br>
   <tbody>
     <tr>
       <td nowrap align="center">이윤승</td>
-      <td align="center">프로젝트 총괄<br>자율주행 알고리즘 개발<br>ROS2를 이용한 매핑 및 군집제어</td>
+      <td align="center">프로젝트 총괄<br>견인 시 주행 안정화 알고리즘 개발<br>멀티로봇 시스템 개발<br>관제 시스템 개발</td>
       <td align="center"></td>
     </tr>
     <tr>
