@@ -51,7 +51,7 @@ https://youtu.be/UkVe2rLXZ-U<br>
   <tr>
     <th>김혁진</th>
     <th>하드웨어, 회로도 제작</th>
-    <th></th>
+    <th>너무 밀집도만 집중해서 놓친게 많아 아쉽다.</th>
   </tr>
 </table>
 
