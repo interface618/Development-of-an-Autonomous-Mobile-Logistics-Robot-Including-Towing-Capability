@@ -1,5 +1,5 @@
 <p align='center'>
-<img src="https://capsule-render.vercel.app/api?type=cylinder&height=200&color=2c2c2a&text=Development-of-an-Autonomous-Mobile-Logistics-Robot&section=header&textBg=false&fontColor=FFFFFF&fontAlign=50&fontAlignY=40&fontSize=40&desc=Including-Towing-Capability&stroke=3-Axis-Cartesian-Robot%20&descAlignY=65&descSize=20" />
+<img src="https://capsule-render.vercel.app/api?type=cylinder&height=200&color=2c2c2a&text=Development-of-an-Autonomous-Mobile-Logistics-Robot&section=header&textBg=false&fontColor=FFFFFF&fontAlign=50&fontAlignY=40&fontSize=30&desc=Including-Towing-Capability&stroke=3-Axis-Cartesian-Robot%20&descAlignY=65&descSize=20" />
 
 <div align="center">
 <h2>[2024] 견인기능을 포함한 물류로봇 ♻️</h2>
