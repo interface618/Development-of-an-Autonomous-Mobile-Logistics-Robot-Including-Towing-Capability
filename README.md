@@ -54,7 +54,9 @@ https://youtu.be/UkVe2rLXZ-U<br>
     <tr>
       <td nowrap align="center">최성원</td>
       <td align="center">영상인식 장치 제작<br>자율주행 알고리즘 개발<br>로봇정렬</td>
-      <td align="center"></td>
+      <td align="center">카메라 기반 영상 인식 장치 설계 및 ROS2 연동, 로봇 전방 환경 및<br> 도킹 대상 인식을 위한 영상 처리 파이프라인 구성<br>
+영상 인식 결과를 이용한 로봇 정렬 알고리즘 설계<br>
+목표 위치·각도 오차에 따른 단계적 접근 로직 구성</td>
     </tr>
     <tr>
       <td nowrap align="center">김혁진</td>
