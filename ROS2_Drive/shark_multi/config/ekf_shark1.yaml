@@ -1,0 +1,78 @@
+# file: ekf_shark1.yaml
+ekf_filter_node:
+  ros__parameters:
+    # ===== 기본 동작 =====
+    frequency: 20.0
+    sensor_timeout: 0.2
+    two_d_mode: true
+    predict_to_current_time: true
+    publish_tf: true
+    publish_acceleration: true
+
+    # ===== 프레임 설정 (멀티로봇: 네임스페이스 포함) =====
+    map_frame: map
+    odom_frame: shark1/odom                 # AMCL이 만드는 전역-로컬 변환의 '로컬 프레임'
+    base_link_frame: shark1/base_footprint  # AMCL base_frame_id와 일치
+    world_frame: shark1/odom                # ★ AMCL 사용 시 반드시 odom(여기서는 shark1/odom)
+
+    # ===== 입력 1: 휠 오도메트리 (로컬 이동·속도 신뢰) =====
+    # 메시지: nav_msgs/Odometry
+    # header.frame_id = shark1/odom, child_frame_id = shark1/base_footprint
+    odom0: /shark1/odom
+    odom0_config: [ true,  true,  false,   # x, y, z
+                    false, false, true,    # roll, pitch, yaw
+                    true,  false, false,   # vx, vy, vz
+                    false, false, true,    # vroll, vpitch, vyaw (wz)
+                    false, false, false ]  # ax, ay, az
+    odom0_differential: false
+    odom0_relative: false
+    odom0_queue_size: 10
+
+    # ===== 입력 2: 라이다 오도메트리 (포즈 보정 신뢰) =====
+    # 예) scan-matching, LIO, FAST-LIO 등
+    # 메시지: nav_msgs/Odometry
+    # header.frame_id = shark1/odom, child_frame_id = shark1/base_footprint
+    odom1: /shark1/scan_front
+    odom1_config: [ true,  true,  false,
+                    false, false, true,
+                    false, false, false,
+                    false, false, false,
+                    false, false, false ]
+    odom1_differential: false
+    odom1_relative: false
+    odom1_queue_size: 10
+
+    # ===== 입력 3: IMU =====
+    # 메시지: sensor_msgs/Imu (가급적 실제 IMU 드라이버 토픽 사용)
+    # yaw(orientation.zw)와 angular_velocity.z가 핵심
+    imu0: /shark1/imu/data   # 어댑터 사용 시 /shark1/imu/data_yaw_only
+    imu0_config: [ false, false, false,
+                   false, false, true,     # yaw
+                   false, false, false,
+                   false, false, true,     # yaw rate (wz)
+                   false, false, false ]
+    imu0_differential: false
+    imu0_relative: false
+    imu0_queue_size: 50
+    imu0_remove_gravitational_acceleration: true
+
+    # ===== (선택) 노이즈/초기 공분산 튜닝 지점 =====
+    # process_noise_covariance: [   # 15x15, 필요시 대각만 부분 지정
+    #   0.05, 0,    0,    0,    0,    0,
+    #   0,    0.05, 0,    0,    0,    0,
+    #   0,    0,    1e6,  0,    0,    0,
+    #   0,    0,    0,    1e6,  0,    0,
+    #   0,    0,    0,    0,    1e6,  0,
+    #   0,    0,    0,    0,    0,    0.03,
+    #   0.1,  0,    0,    0,    0,    0,
+    #   0,    0.1,  0,    0,    0,    0,
+    #   0,    0,    1e6,  0,    0,    0,
+    #   0,    0,    0,    1e6,  0,    0,
+    #   0,    0,    0,    0,    1e6,  0,
+    #   0,    0,    0,    0,    0,    0.05,
+    #   0,    0,    0,    0,    0,    0,
+    #   0,    0,    0,    0,    0,    0,
+    #   0,    0,    0,    0,    0,    0
+    # ]
+    #
+    # initial_estimate_covariance: [ ... ]

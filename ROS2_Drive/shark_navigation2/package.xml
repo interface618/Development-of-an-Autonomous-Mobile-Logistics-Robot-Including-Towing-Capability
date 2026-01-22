@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>shark_navigation2</name>
+  <version>0.0.1</version>
+  <description>Navigation bringup (Nav2 + AMCL + Map) for SHARK robot</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- ament_python 사용 -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- 런치만 있어도 런타임 의존성은 명시 -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>nav2_map_server</exec_depend>
+  <exec_depend>nav2_amcl</exec_depend>
+  <exec_depend>nav2_planner</exec_depend>
+  <exec_depend>nav2_controller</exec_depend>
+  <exec_depend>nav2_bt_navigator</exec_depend>
+  <exec_depend>nav2_smoother</exec_depend>
+  <exec_depend>nav2_lifecycle_manager</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- 테스트를 쓸 계획이 없으면 제거 가능 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>pytest</test_depend>
+
+  <export>
+    <!-- ament_python 패키지 표시용 -->
+    <build_type>ament_python</build_type>
+  </export>
+</package>
