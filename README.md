@@ -23,7 +23,10 @@
 본 작품은 자율이동로봇(AMR) 환경에서 고장 로봇을 정상 로봇이 자율적으로 인식하고 도킹·견인하여 물류 작업 흐름을 유지하는 자동 복구형 협업 로봇 시스템이다. 다중 센서 융합 기반 정렬 및 결합 메커니즘과 견인 모드 전환에 따른 제어 파라미터 자동 조정을 통해 하중 변화에 안정적으로 대응할 수 있도록 설계되었다. 이를 통해 물류센터 내 작업 중단을 최소화하고 운영 안정성과 고가용성을 확보한다.
 
 ## 작품 작동 방식
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/c358708f-4f65-433b-838a-32cf11c9d10c" />
+
 https://youtu.be/UkVe2rLXZ-U<br>
+
 또는 demonstration video참조<br>
 
 ## 역할 및 내용
