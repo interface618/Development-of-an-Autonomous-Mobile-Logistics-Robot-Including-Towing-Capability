@@ -48,7 +48,7 @@ https://youtu.be/UkVe2rLXZ-U<br>
     </tr>
     <tr>
       <td nowrap align="center">박승규</td>
-      <td align="center">모터 제어</td>
+      <td align="center">모터 제어<br>센서 데이터 수집</td>
       <td align="center">STM32 기반 엔코더 속도 측정 및 모터 PWM 제어 루프 구현<br>목표 선속도/각속도 추종을 위한 증분형 PID 제어기 적용<br>견인/비견인 모드 전환 시 PID 게인 자동 스위칭 구조 설계<br>엔코더 값을 이용해 Dead-reckoning 오도메트리로 (x, y, yaw) 위치를 추정<br>IMU + 2D LiDAR EKF 융합으로 장기 드리프트 보정</td>
     </tr>
     <tr>
@@ -58,7 +58,7 @@ https://youtu.be/UkVe2rLXZ-U<br>
     </tr>
     <tr>
       <td nowrap align="center">김혁진</td>
-      <td align="center">하드웨어, 회로도 제작</td>
+      <td align="center">하드웨어, 회로도 제작<br>센서 데이터 수집</td>
       <td align="center">3D프린터를 이용한 외관제작<br>소자간의 밀집도가 높은 회로도 제작<br>회로도, 베터리, 젯슨오린나노 등 모듈간의 밀집도높은 내부 설계</td>
     </tr>
   </tbody>
@@ -85,4 +85,4 @@ https://youtu.be/UkVe2rLXZ-U<br>
 ## 코멘트
 
 - PID 게인을 실험적으로 조정해 성능을 맞췄지만, 시간·환경 제약으로 충분한 반복 실험 데이터를 쌓지 못한 점이 아쉬웠습니다. 다음에는 더 다양한 조건에서 데이터를 축적해 근거 기반으로 최적 게인을 도출하고 싶습니다.
-- 너무 밀집도만 집중해서 놓친게 많아 아쉽다.
+- 너무 회로도와 내부 설계 밀집도만 집중해서 내부온도와 같이 중요한 부분을 놓친게 많아 아쉽다.
