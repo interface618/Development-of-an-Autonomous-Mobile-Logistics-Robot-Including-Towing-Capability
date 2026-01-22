@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=cylinder&height=200&color=2c2c2a&text=Development-of-an-Autonomous-Mobile-Logistics-Robot&section=header&textBg=false&fontColor=FFFFFF&fontAlign=50&fontAlignY=40&fontSize=30&desc=Including-Towing-Capability&stroke=3-Axis-Cartesian-Robot%20&descAlignY=65&descSize=20" />
 
 <div align="center">
-<h2>[2024] 견인기능을 포함한 물류로봇 ♻️</h2>
+<h2>[2025] 견인기능을 포함한 물류로봇 ♻️</h2>
 AI 기반 스마트 분리수거 시스템은 웹캠과 딥러닝 모델로 폐기물을 인식한 후 3축 직교좌표 로봇이 자동으로 분류까지 수행하는 시스템입니다.<br> 분류 이후에는 초음파 세척으로 이물질을 제거해 재활용품 품질까지 함께 관리합니다.<br>
 </div>
 
@@ -27,9 +27,9 @@ AI 기반 스마트 분리수거 시스템은 웹캠과 딥러닝 모델로 폐�
 ## 작품 작동 방식
 
 ## 역할 및 코멘트
-이윤승 : 
-박승규 : 
-최성원 : 
+이윤승 : <br>
+박승규 : <br>
+최성원 : <br>
 김혁진 : 
 
 ## 트러블 슈팅
