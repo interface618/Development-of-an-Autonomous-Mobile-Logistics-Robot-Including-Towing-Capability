@@ -35,22 +35,22 @@ https://youtu.be/UkVe2rLXZ-U<br>
   </tr>
   <tr>
     <th>이윤승</th>
-    <th></th>
+    <th>프로젝트 총괄</th>
     <th></th>
   </tr>
   <tr>
     <th>박승규</th>
-    <th></th>
+    <th>모터 제어</th>
     <th></th>
   </tr>
   <tr>
     <th>최성원</th>
-    <th></th>
+    <th>영상인식 제작</th>
     <th></th>
   </tr>
   <tr>
     <th>김혁진</th>
-    <th></th>
+    <th>하드웨어, 회로도 제작</th>
     <th></th>
   </tr>
 </table>
