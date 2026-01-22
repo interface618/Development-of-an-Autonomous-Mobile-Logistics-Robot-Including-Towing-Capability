@@ -38,17 +38,17 @@ https://youtu.be/UkVe2rLXZ-U<br>
   </tr>
   <tr>
     <th>이윤승</th>
-    <th>프로젝트 총괄</th>
+    <th>프로젝트 총괄<br>자율주행 알고리즘 개발<br>ROS2를 이용한 매핑 및 군집제어</th>
     <th></th>
   </tr>
   <tr>
     <th>박승규</th>
-    <th>모터 제어</th>
+    <th>모터 PID 제어 개발</th>
     <th></th>
   </tr>
   <tr>
     <th>최성원</th>
-    <th>영상인식 장치 제작</th>
+    <th>영상인식 장치 제작<br>자율주행 알고리즘 개발</th>
     <th></th>
   </tr>
   <tr>
