@@ -59,7 +59,7 @@ https://youtu.be/UkVe2rLXZ-U<br>
     <tr>
       <td nowrap align="center">김혁진</td>
       <td align="center">하드웨어, 회로도 제작</td>
-      <td align="center">3D프린터를 이용한 외관제작, 소자간의 밀집도가 높은 회로도 제작, 회로도, 베터리, 젯슨오린나노 등 모듈간의 밀집도높은 내부 설계</td>
+      <td align="center">3D프린터를 이용한 외관제작<br>소자간의 밀집도가 높은 회로도 제작<br>회로도, 베터리, 젯슨오린나노 등 모듈간의 밀집도높은 내부 설계</td>
     </tr>
   </tbody>
 </table>
