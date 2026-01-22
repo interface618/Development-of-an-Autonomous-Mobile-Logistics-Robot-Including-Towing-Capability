@@ -24,7 +24,7 @@
 
 ## 작품 작동 방식
 https://youtu.be/UkVe2rLXZ-U<br>
-또는 Video참조<br>
+또는 demonstration video참조<br>
 
 ## 역할 및 코멘트
 이윤승 : 
