@@ -44,7 +44,7 @@ https://youtu.be/UkVe2rLXZ-U<br>
     <tr>
       <td nowrap align="center">이윤승</td>
       <td align="center">프로젝트 총괄<br>견인 시 주행 안정화 알고리즘 개발<br>멀티로봇 시스템 개발<br>관제 시스템 개발</td>
-      <td align="center"></td>
+      <td align="center">견인 시 주행 불안정성 완화를 위한 알고리즘 개발<br>멀티 로봇 제어를 위한 환경 구축<br>멀티로봇의 작업 스케쥴러 생성<br>관제시스템 UI 제작</td>
     </tr>
     <tr>
       <td nowrap align="center">박승규</td>
