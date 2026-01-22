@@ -1,0 +1,6 @@
+aruco_aligner:
+  ros__parameters:
+    # 큰 마커 3 -> 작은 마커 1
+    # 큰 마커 2 -> 작은 마커 1
+    marker_pairs: ["3,1", "2,1"]
+    min_safe_distance: 0.3
