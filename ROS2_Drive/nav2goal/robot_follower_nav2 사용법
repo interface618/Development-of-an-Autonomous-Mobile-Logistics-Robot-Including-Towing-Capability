@@ -1,0 +1,9 @@
+ros2 run nav2goal robot_follower_nav2 \
+  --ros-args \
+  -p use_initial_goal:=true \
+  -p initial_x:=2.0 \
+  -p initial_y:=1.5 \
+  -p initial_theta_deg:=90.0 \
+  -p distance:=0.1 \
+  -p follow_side:=behind
+

@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<robot name="shark1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- 프레임에 붙일 접두어. 예: "shark0/" 또는 "shark1/" (앞에 슬래시는 금지) -->
+  <xacro:arg name="prefix" default="shark1/"/>
+
+  <!-- ===== Materials ===== -->
+  <material name="orange">
+    <color rgba="1.0 0.4235 0.0392 1.0"/>
+  </material>
+
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <!-- ===== 매크로 본체 ===== -->
+  <xacro:macro name="make_shark" params="prefix">
+
+    <!-- Links -->
+    <link name="${prefix}base_footprint"/>
+
+    <link name="${prefix}base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 3.141592"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/body.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="orange"/>
+      </visual>
+    </link>
+
+    <link name="${prefix}right_wheel">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}left_wheel">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}laser_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/rplidar-a2.stl" scale="1 1 1"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/rplidar-a2.stl" scale="1 1 1"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}imu_link"/>
+
+    <link name="${prefix}camera_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/webcam.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://shark_urdf/meshes/webcam.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joints -->
+    <joint name="${prefix}base_joint" type="fixed">
+      <parent link="${prefix}base_footprint"/>
+      <child  link="${prefix}base_link"/>
+      <origin xyz="-0.03 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="${prefix}R_wheel_joint" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child  link="${prefix}right_wheel"/>
+      <origin xyz="-0.03 -0.165 0.06" rpy="-3.14159 0 0"/>
+      <axis xyz="0 0 0"/>
+    </joint>
+
+    <joint name="${prefix}L_wheel_joint" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child  link="${prefix}left_wheel"/>
+      <origin xyz="-0.03 0.165 0.06" rpy="0 0 0"/>
+      <axis xyz="0 0 0"/>
+    </joint>
+
+    <joint name="${prefix}laser_joint" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child  link="${prefix}laser_link"/>
+      <origin xyz="0.2 0 0.19" rpy="0 0 3.141592"/>
+      <axis xyz="0 0 0"/>
+    </joint>
+
+    <joint name="${prefix}imu_joint" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child  link="${prefix}imu_link"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 0"/>
+    </joint>
+
+    <joint name="${prefix}camera_joint" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child  link="${prefix}camera_link"/>
+      <origin xyz="-0.225 0 0.12" rpy="0 0 0"/>
+      <axis xyz="0 0 0"/>
+    </joint>
+
+  </xacro:macro>
+
+  <!-- 매크로 인스턴스화 -->
+  <xacro:make_shark prefix="$(arg prefix)"/>
+
+</robot>
