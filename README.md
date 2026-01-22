@@ -31,32 +31,37 @@ https://youtu.be/UkVe2rLXZ-U<br>
 또는 demonstration video참조<br>
 
 ## 역할 및 내용
-<table>
-  <tr>
-    <th>이름</th>
-    <th>역할</th>
-    <th>내용</th>
-  </tr>
-  <tr>
-    <th>이윤승</th>
-    <th>프로젝트 총괄<br>자율주행 알고리즘 개발<br>ROS2를 이용한 매핑 및 군집제어</th>
-    <th></th>
-  </tr>
-  <tr>
-    <th>박승규</th>
-    <th>모터 제어</th>
-    <th>STM32 기반 엔코더 속도 측정 및 모터 PWM 제어 루프 구현<br>목표 선속도/각속도 추종을 위한 증분형 PID 제어기 적용<br>견인/비견인 모드 전환 시 PID 게인 자동 스위칭 구조 설계<br>엔코더 값을 이용해 Dead-reckoning 오도메트리로 (x, y, yaw) 위치를 추정<br>IMU + 2D LiDAR EKF 융합으로 장기 드리프트 보정</th>
-  </tr>
-  <tr>
-    <th>최성원</th>
-    <th>영상인식 장치 제작<br>자율주행 알고리즘 개발<br>로봇정렬</th>
-    <th></th>
-  </tr>
-  <tr>
-    <th>김혁진</th>
-    <th>하드웨어, 회로도 제작</th>
-    <th>너무 밀집도만 집중해서 놓친게 많아 아쉽다.</th>
-  </tr>
+
+<table align="center">
+  <thead>
+    <tr>
+      <th align="center">이름</th>
+      <th align="center">역할</th>
+      <th align="center">내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td nowrap align="center">이윤승</td>
+      <td align="center">프로젝트 총괄<br>자율주행 알고리즘 개발<br>ROS2를 이용한 매핑 및 군집제어</td>
+      <td align="center"></td>
+    </tr>
+    <tr>
+      <td nowrap align="center">박승규</td>
+      <td align="center">모터 제어</td>
+      <td align="center">STM32 기반 엔코더 속도 측정 및 모터 PWM 제어 루프 구현<br>목표 선속도/각속도 추종을 위한 증분형 PID 제어기 적용<br>견인/비견인 모드 전환 시 PID 게인 자동 스위칭 구조 설계<br>엔코더 값을 이용해 Dead-reckoning 오도메트리로 (x, y, yaw) 위치를 추정<br>IMU + 2D LiDAR EKF 융합으로 장기 드리프트 보정</td>
+    </tr>
+    <tr>
+      <td nowrap align="center">최성원</td>
+      <td align="center">영상인식 장치 제작<br>자율주행 알고리즘 개발<br>로봇정렬</td>
+      <td align="center"></td>
+    </tr>
+    <tr>
+      <td nowrap align="center">김혁진</td>
+      <td align="center">하드웨어, 회로도 제작</td>
+      <td align="center">너무 밀집도만 집중해서 놓친게 많아 아쉽다.</td>
+    </tr>
+  </tbody>
 </table>
 
 ## 트러블 슈팅
