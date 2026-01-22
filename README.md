@@ -27,14 +27,33 @@ https://youtu.be/UkVe2rLXZ-U<br>
 또는 demonstration video참조<br>
 
 ## 역할 및 코멘트
-이윤승 : 
-<br>
-박승규 :
-<br>
-최성원 : 
-<br>
-김혁진 : 
-<br>
+<table>
+  <tr>
+    <th>이름</th>
+    <th>역할</th>
+    <th>코멘트</th>
+  </tr>
+  <tr>
+    <th>이윤승</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>박승규</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>최성원</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>김혁진</th>
+    <th></th>
+    <th></th>
+  </tr>
+</table>
 
 ## 트러블 슈팅
 
