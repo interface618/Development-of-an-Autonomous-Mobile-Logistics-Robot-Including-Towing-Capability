@@ -48,7 +48,7 @@ https://youtu.be/UkVe2rLXZ-U<br>
   </tr>
   <tr>
     <th>최성원</th>
-    <th>영상인식 장치 제작<br>자율주행 알고리즘 개발</th>
+    <th>영상인식 장치 제작<br>자율주행 알고리즘 개발<br>로봇정렬</th>
     <th></th>
   </tr>
   <tr>
